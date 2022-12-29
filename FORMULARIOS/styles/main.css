@@ -10,6 +10,13 @@ body{
     background: rgb(0, 35, 78);
     margin-top: 1%;
 }
+.success{
+    background: rgba(0, 199, 78, 0.5);
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+}
 
 h2, h3{
     color: white;
@@ -40,8 +47,27 @@ img{
 .reonsive-ok{
     display: none;
 }
+@media (max-width: 300px){
+    .responsive-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col{
+        padding: 0 !important;
+    }
+    h2{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 12px;
+    }
+}
 @media (max-width: 600px)
-{   img{
+{   
+    img{
     width:20%;
     margin-top: 2%;
     margin-bottom: 2%;
